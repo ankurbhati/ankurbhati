@@ -141,13 +141,14 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth'
 )
 
-import os
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = 'static'
-STATIC_URL = '/static/'
+#import os
+#BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+#STATIC_ROOT = 'static'
+#STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+#STATICFILES_DIRS = (
+#    os.path.join(BASE_DIR, 'static'),
+#)
+
+#import dj_database_url
+#DATABASES['default'] =  dj_database_url.config()
