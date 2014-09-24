@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load staticfiles%}
+{% block title %}About::Ankur Bhati{%endblock%}
+{% block header%}
+	<div id="header">
+		<div class="section">
+			<div class="logo">
+				<a href="{% url 'index' %}">Ankur Bhati</a>
+			</div>
+			<ul>					
+				<li>
+					<a href="{% url 'index' %}">home</a>
+				</li>
+				<li  class="selected">
+					<a href="{% url 'about' %}">about</a>
+				</li>
+				<li>
+					<a href="{% url 'projects' %}">Projects</a>
+				</li>
+				<li>
+					<a href="{% url 'blogs' %}">Blogs</a>
+				</li>
+				<li>
+					<a href="{% url 'contact'%}">contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+{%endblock%}
+{%block body%}	
+	<div id="body">
+		<h3>about me</h3>
+		<b>College</b>
+		<p>
+			Text, text, text, text, text, text, text, text, text, text, text, text...
+		</p>
+		<b>First Job</b>
+		<p>
+			Text, text, text, text, text, text, text, text, text, text, text, text...
+		</p>
+		<b>First Switch And Current Job</b>
+		<p>
+			Text, text, text, text, text, text, text, text, text, text, text, text...
+		</p>
+	</div>
+{%endblock%}

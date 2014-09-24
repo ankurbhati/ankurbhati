@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}Contact::Ankur Bhati{%endblock%}
+{%block header %} 
+	<div id="header">
+		<div class="section">
+			<div class="logo">
+				<a href="{% url 'index' %}">Ankur Bhati</a>
+			</div>
+			<ul>					
+				<li>
+					<a href="{% url 'index' %}">home</a>
+				</li>
+				<li>
+					<a href="{% url 'about' %}">about</a>
+				</li>
+				<li>
+					<a href="{% url 'projects' %}">Projects</a>
+				</li>
+				<li>
+					<a href="{% url 'blogs' %}">Blogs</a>
+				</li>
+				<li class="selected">
+					<a href="{% url 'contact'%}">contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+{%endblock%}
+{% block body %}	
+	<div id="body">
+		<div class="article">
+			<h3>contact us</h3>
+			<p>
+				For contact, drop me an email to <a href="mailto:ankurbhati03@gmail.com">Me</a> or connect me via <a href="#">Facebook</a>
+			</p>
+			<ul>
+				<li>
+					<span>Address : </span>Flat Number - 4T, Arihant Harmony, Indirapuram, Ghaziabad, Uttar Pradesh, India
+				</li>
+				<li>
+					<span>Phone Number :</span> 9911632391
+				</li>
+				<li>
+					<span>Email :</span> <a href="#">ankurbhati03@gmail.com</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+{% endblock %}

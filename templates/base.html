@@ -1,0 +1,122 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>{%block title %}::Ankur Bhati{% endblock %}</title>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}?v=1" type="text/css">
+	<script type="text/javascript" src="{% static 'js/jquery.js' %}?v=1" ></script>
+	<script type="text/javascript" src="{% static 'js/common.js' %}?v=1" ></script>
+</head>
+<body>
+	{% block header %}
+		<div id="header">
+			<div class="section">
+				<div class="logo">
+					<a href="{% url 'index' %}">Ankur Bhati</a>
+				</div>
+				<ul>					
+					<li class="selected">
+						<a href="{% url 'index' %}">home</a>
+					</li>
+					<li>
+						<a href="{% url 'about' %}">about</a>
+					</li>
+					<li>
+						<a href="{% url 'projects' %}">Projects</a>
+					</li>
+					<li>
+						<a href="{% url 'blogs' %}">Blogs</a>
+					</li>
+					<li>
+						<a href="{% url 'contact'%}">contact</a>
+					</li>
+				</ul>
+			</div>		
+			<div class="article">
+				<img style="max-height: 356px" src="{% static 'images/ankur_bhati.png' %}" alt="">
+				<h1>The only thing that can stop you is you only...</h1>
+			</div>
+		</div>
+	{% endblock %}
+	{% block body %}
+		<div id="body">
+			<ul>
+				<li>
+					<a href="#"><img src="{% static 'images/computer-image.jpg' %}" alt=""></a>
+					<b>Application 1</b>
+					<p>
+						This is going to be application which can be used in daily uses by me and you.
+					</p>
+				</li>
+				<li>
+					<a href="#"><img src="{% static 'images/computer-image.jpg' %}" alt=""></a>
+					<b>Application 2</b>
+					<p>
+						This is going to be application which can be used in daily uses by me and you.
+					</p>
+				</li>
+				<li>
+					<a href="#"><img src="{% static 'images/computer-image.jpg' %}" alt=""></a>
+					<b>Application 3</b>
+					<p>
+						This is going to be application which can be used in daily uses by me and you.
+					</p>
+				</li>
+				<li>
+					<a href="#"><img src="{% static 'images/computer-image.jpg' %}" alt=""></a>
+					<b>Application 4</b>
+					<p>
+						This is going to be application which can be used in daily uses by me and you.
+					</p>
+				</li>
+			</ul>
+			<div>
+				<div class="featured">
+					<h2>Objective</h2>
+					<img src="{% static 'images/hard-disk.jpg' %}" alt="">
+					<h3></h3>
+					<p>
+						My motto is to make this website as a great source of knowledge.
+					</p>
+					<p>
+						My objective is to share a on this platform in my free time which I will get apart from my learnings.
+					</p>
+					<p>
+						My objective is to share a on this platform in my free time which I will get apart from my learnings.
+					</p>
+				</div>
+				<div class="section">
+					<div class="article">
+						<h2>Quotes</h2>
+						<p>
+							Hard work is always rewarded, just keep on learning and stay focused.
+						</p>
+						<a href="#">Ankur Bhati</a>
+					</div>
+					<div class="newsletter">
+						<img src="{% static 'images/skinhead.png' %}" alt="">
+						<p>
+							“Whether you think you can, or you think you can't--you're right.” <br />― Henry Ford
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endblock %}
+	<div id="footer">
+		<div>
+			<div class="connect">
+				<a href="#" id="twitter">twitter</a>
+				<a href="#" id="facebook">facebook</a>
+				<a href="#" id="googleplus">googleplus</a>
+				<a href="#" id="pinterest">pinterest</a>
+			</div>
+			<p>
+				&copy; Designed&Developed by Ankur Bhati::Is it too difficult to share rather than just learning?
+			</p>
+		</div>
+	</div>
+</body>
+</html>
